@@ -11,7 +11,7 @@ class CounterGroupSum extends Component {
         return (
             <div>
                 <section>
-                    <p>sum of all counters value is <mark>{sum}</mark></p>
+                    <p>Sum of all counters value is : {sum}</p>
                 </section>
 
             </div>

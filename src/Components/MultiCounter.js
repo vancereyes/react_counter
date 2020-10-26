@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CounterSizeGenerator from './CounterSizeGenerator';
 import CounterGroup from './CounterGroup';
 import CounterGroupSum from './CounterGroupSum';
+import './MultiCounter.css';
 
 class MultiCounter extends Component {
 
@@ -23,12 +24,14 @@ class MultiCounter extends Component {
 
     render() {
         return (
-            <div>
-                <fieldset>
-                    <CounterSizeGenerator onGenerate={this.onGenerate} />
-                    <CounterGroupSum sum={this.state.sum} />
-                </fieldset>
+            <div id = "componentSum">
+                <div class= "component-size-sum">
+                <CounterSizeGenerator onGenerate={this.onGenerate} />
+                <CounterGroupSum sum={this.state.sum} />
+                </div>
+                <div class="component-group-counter">
                 <CounterGroup size={this.state.size} onSum={this.onSum} />
+                </div>
             </div>
         );
     }
