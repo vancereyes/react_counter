@@ -27,6 +27,7 @@ class CounterSizeGenerator extends Component {
                         type="number"
                         name="size"
                         id="size"
+                        min={0}
                         value={this.state.size}
                         onChange={this.onChange} />
                 </label>
